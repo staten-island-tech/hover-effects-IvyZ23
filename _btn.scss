@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+.btn-1 {
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border: black solid 1.5px;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-1:hover {
+    background: color(red);
+    transform: translateY(-3px);
+    transition: all 0.3s;
+    box-shadow: 5px 8px black;
+}

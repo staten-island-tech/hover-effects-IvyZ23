@@ -1,0 +1,16 @@
+@import "_variables.scss";
+@import "_btn.scss";
+@import "_btn2.scss";
+@import "_lake.scss";
+@import "_water.scss";
+@import "_plains.scss";
+
+.container {
+    width: 80vw;
+    margin: 2rem auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
