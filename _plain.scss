@@ -1,0 +1,36 @@
+@import "_variables.scss";
+
+.plains-parent {
+    position: relative;
+    display: inline-block;
+    background-color: color(green);
+    margin: 2rem;
+    transition: all 0.3s;
+}
+
+.header{
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+.plains {
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+.plains-parent:hover .plains{
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.plains-parent:hover .header {
+    opacity: 0;
+}
+
+.plains-parent:hover {
+    background-color: white;
+}
