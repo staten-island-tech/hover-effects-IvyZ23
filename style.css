@@ -77,8 +77,8 @@ body {
 
 .lake {
   margin: 2rem;
-  -webkit-clip-path: circle(30%);
-          clip-path: circle(30%);
+  -webkit-clip-path: polygon(0 9%, 100% 9%, 100% 93%, 0 93%);
+          clip-path: polygon(0 9%, 100% 9%, 100% 93%, 0 93%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -86,8 +86,8 @@ body {
 .lake:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  -webkit-clip-path: circle(25%);
-          clip-path: circle(25%);
+  -webkit-clip-path: polygon(6% 14%, 94% 14%, 94% 88%, 6% 88%);
+          clip-path: polygon(6% 14%, 94% 14%, 94% 88%, 6% 88%);
 }
 
 html,
@@ -100,9 +100,21 @@ body {
 }
 
 .water {
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  margin-bottom: 2rem;
+  border-radius: 60%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.water:hover {
+  border-radius: 0;
+  -webkit-clip-path: none;
+          clip-path: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .container {

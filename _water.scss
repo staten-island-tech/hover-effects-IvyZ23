@@ -1,7 +1,15 @@
 @import "_variables.scss";
 
 .water {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    margin-bottom: 2rem;
+    border-radius: 60%;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+
+.water:hover {
+    border-radius: 0;
+    clip-path: none;
+    transform: scale(1.1);
+    filter: none;
 }
 
