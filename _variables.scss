@@ -1,0 +1,17 @@
+html,
+body {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colors: (
+    green: #baffe1,
+    blue: #CEE5FF,
+    red:#ff5050,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

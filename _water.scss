@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+.water {
+    border-radius: 60%;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+
+.water:hover {
+    border-radius: 0;
+    clip-path: none;
+    transform: scale(1.1);
+    filter: none;
+}
+
