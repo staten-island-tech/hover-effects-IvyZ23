@@ -3,9 +3,8 @@
 .plains-parent {
     position: relative;
     display: inline-block;
-    background-color: color(green);
     margin: 2rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .header{
@@ -14,7 +13,9 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 40%;
+    top: 15%;
+    border: 1px black solid;
+    padding: 6rem 0;
 }
 
 .plains {
